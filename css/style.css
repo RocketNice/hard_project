@@ -1,57 +1,8 @@
 @font-face {
-    font-family: "Myriad Pro Light SemiCond";
-    src: url("..//fonts/MyriadPro-SemiboldSemiCn.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro";
-    src: url("../fonts/MyriadPro-BoldCond.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro";
-    src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro Black";
-    src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro Black";
-    src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
+    font-family: 'Myriad Pro';
+    src: url("../fonts/MyriadPro-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro Black";
-    src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro Black";
-    src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -59,31 +10,21 @@
     src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 
-@font-face {
-    font-family: "Myriad Pro Black";
-    src: url("../fonts/MyriadPro-Black.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Myriad Pro";
-    src: url("../fonts/MyriadPro-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: "Myriad Pro";
     src: url("../fonts/MyriadPro-SemiboldCond.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
+}
+
+@font-face {
+    font-family: "PH 400 Caps";
+    src: url("../fonts/PH-400RegularCaps.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
 }
 
 * {
@@ -92,10 +33,13 @@
 
 .container {
     position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 html {
-    background: url("../images/mainBGNEW.png"), #D2D2D2 !important;
+    background: #D2D2D2 !important;
 }
 
 body {
@@ -196,38 +140,6 @@ a {
     align-items: center;
 }
 
-.button_right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10%;
-    height: 100%;
-}
-
-.to_book {
-    position: absolute;
-    right: 0;
-    padding: 0 0 562px 0;
-}
-
-.btn {
-    display: block;
-    position: sticky;
-    top: 50%;
-    z-index: 299;
-    padding: 12px 61px;
-    background: #778847;
-    border-radius: 20px 20px 0px 0px;
-    transform: rotate(-90deg) translate(0px, 91px);
-}
-
-.btn div {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
-    color: #ffffff;
-}
-
 .first-image {
     background-image: url(../images/home_img_background_first_block_1440px.png);
     height: 608px;
@@ -239,15 +151,19 @@ a {
     position: relative;
     height: 100%;
     margin: 0 auto;
-    max-width: 1222px;
-    z-index: 1;
+    max-width: 1238px;
+    width: 100%;
 }
 
 .first-image-left {
-    width: 100%;
+    width: 50%;
     height: 100%;
-    padding-bottom: 77px;
+    padding-bottom: 248px;
+    padding-left: 7px;
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .first_content {
@@ -257,15 +173,11 @@ a {
     height: 100%;
 }
 
-.logo-title {
-    margin-bottom: 75px;
-}
-
-.logo-title h1 {
+.first-image-left h1 {
     margin-bottom: 51px;
     font-style: normal;
     font-weight: 700;
-    font-size: 47px;
+    font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
     color: #ffffff;
@@ -286,9 +198,19 @@ a {
     color: #342824;
 }
 
+.map-title::after {
+    content: "";
+    background-image: url(../images/Frame\ 6470\ \(1\).svg);
+    width: 45px;
+    height: 23px;
+    margin-left: 10px;
+}
+
 .join_block {
     align-self: end;
-    margin-bottom: -11px;
+    margin-bottom: 79px;
+    margin-top: -99px;
+    margin-right: 47px;
 }
 
 .join_text {
@@ -297,17 +219,15 @@ a {
     font-weight: normal;
     font-size: 36px;
     line-height: 43px;
-    text-align: center;
+    text-align: end;
     color: #e5e4e2;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .join_list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
-    z-index: 200;
 }
 
 .join_icon {
@@ -325,7 +245,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 948px;
-    padding-bottom: 87px;
 }
 
 .third-link {
@@ -344,19 +263,25 @@ a {
 }
 
 .link {
-    margin-right: 81px;
-    margin-bottom: -1px;
+    width: 100%;
+    text-transform: uppercase;
     font-family: "PH 400 Caps";
     font-style: normal;
     font-weight: normal;
     font-size: 44px;
-    line-height: 53px;
     text-align: center;
     color: #342824;
     display: flex;
-    width: max-content;
-    justify-content: space-between;
-    align-items: center;
+    margin-right: 113px;
+}
+
+.link::after {
+    background-image: url(../images/Vector.svg);
+    content: "";
+    width: 25px;
+    height: 34px;
+    margin-left: 12.63px;
+    align-self: center;
 }
 
 .second-link {
@@ -374,11 +299,10 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 44px;
-    line-height: 53px;
     text-align: center;
     color: #342824;
     display: flex;
-    width: max-content;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -403,21 +327,6 @@ a {
 .first-link .link {
     margin-right: 64px;
     margin-bottom: -7px;
-}
-
-.first-image .first-image-right .link {
-    font-family: "PH 400 Caps";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 53px;
-    text-align: center;
-    color: #342824;
-    display: flex;
-    width: max-content;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 25px;
 }
 
 .first-link img {
